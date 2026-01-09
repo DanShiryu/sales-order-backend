@@ -44,3 +44,7 @@ Content-Type: application/json
 {
     "firstname": "Jane"
 }
+
+###
+# Buscar todos os pedidos maiores ou iguais a 2 milhões
+GET http://localhost:4004/odata/v4/main/Customers?$filter=not endswith(firstname, '-7847991')

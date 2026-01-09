@@ -47,3 +47,10 @@ Content-Type: application/json
     "modifiedBy": "teste"
 }
 
+###
+# Buscar todos os pedidos maiores ou iguais a 2 milhões
+GET http://localhost:4004/odata/v4/main/SalesOrderHeaders?$filter=totalAmount ge 2000000
+
+###
+# Buscar todos os pedidos maiores ou iguais a 200 mil
+GET http://localhost:4004/odata/v4/main/SalesOrderHeaders?$filter=totalAmount le 200000
