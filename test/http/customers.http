@@ -53,3 +53,8 @@ GET http://localhost:4004/odata/v4/main/Customers?$filter=not endswith(firstname
 #Buscando dados com $search
 http://{{localhost}}/Customers?$search=firstname2
 Content-Type: application/json
+
+###
+#Ordenando dados com orderby
+http://{{localhost}}/Customers?$orderby=firstname desc
+Content-Type: application/json
