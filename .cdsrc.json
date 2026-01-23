@@ -1,12 +1,28 @@
 {
-    "[development]": {
-        "requires": {
-            "db": {
-                "credentials": {
-                    "database": ":memory:"
-                },
-                "kind": "sqlite"
-            }
-        }
+  "odata": {
+    "version": "v4"
+  },
+
+  "requires": {
+    "auth": {
+      "kind": "xsuaa"
+    },
+    "db": {
+      "kind": "hana"
     }
+  },
+
+  "[development]": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": ":memory:"
+        }
+      },
+      "auth": {
+        "kind": "dummy"
+      }
+    }
+  }
 }

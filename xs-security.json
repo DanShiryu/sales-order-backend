@@ -1,0 +1,7 @@
+{
+  "xsappname": "sales-order-backend-xsuaa",
+  "tenant-mode": "dedicated",
+  "scopes": [],
+  "role-templates": [],
+  "attributes": []
+}
